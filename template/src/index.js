@@ -1,4 +1,4 @@
 import * as FlexPlugin from 'flex-plugin';
-import {{pluginClassName}} from './{{pluginClassName}}';
+import Plugin from './Plugin';
 
-FlexPlugin.loadPlugin({{pluginClassName}});
+FlexPlugin.loadPlugin(Plugin);
