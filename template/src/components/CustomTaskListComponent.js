@@ -48,4 +48,4 @@ export class CustomTaskListComponent extends React.Component {
 //   </div>);
 // };
 //
-// export default CustomTaskListComponent;
+export default CustomTaskListComponent;
