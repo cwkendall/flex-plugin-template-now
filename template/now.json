@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "name": "{{name}}",
+  "alias": "{{name}}",
+  "builds": [
+    { "src": "/runtime/express-shim.js", "use": "@now/node" },
+    { "src": "/runtime/functions/*.js", "use": "@now/node" },
+    { "src": "/runtime/assets/*", "use": "@now/static" },
+    { "src": "/package.json", "use": "@now/static-build", "config": { "distDir": "build" } }
+  ],
+  "routes": [
+    { "src": "/plugins.json", "dest": "/plugins.json" },
+    { "src": "/assets/(.*)", "dest": "/runtime/assets/$1" },
+    { "src": "/{{name}}.js", "dest": "/{{name}}.js" },
+    { "src": "/api/(.*)", "dest": "/runtime/express-shim.js" }
+  ],
+  "env": {
+    "TWILIO_ACCOUNT_SID": "@twilio-account",
+    "TWILIO_AUTH_TOKEN": "@twilio-auth"
+  }
+}

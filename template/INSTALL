@@ -1,0 +1,16 @@
+### Flex Plugin - on Now Serverless Platform (https://zeit.co/now)
+##
+# Setup now-cli
+$ npm install -g now
+
+# login to account
+$ now login
+
+# Test fullstack Flex Plugin locally
+$ now dev
+
+# Deploy to: https://{{plugin-name}}-{{deploy-id}}.now.sh
+$ now
+
+# Alias deployment as https://{{plugin-name}}.{{org-name}}.now.sh
+$ now alias

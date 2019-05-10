@@ -1,0 +1,14 @@
+{
+  "name": "runtime-now-{{name}}",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Runtime functions for {{name}}",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "twilio-run --env --no-logs --live"
+  },
+  "dependencies": {
+    "morgan": "^1.9.1",
+    "twilio-run": "cwkendall/twilio-run"
+  }
+}

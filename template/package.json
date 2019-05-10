@@ -1,0 +1,40 @@
+{
+  "name": "{{name}}",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "bootstrap": "flex-check-start",
+    "postinstall": "npm run bootstrap",
+    "prestart": "npm run bootstrap",
+    "start": "craco start",
+    "build": "craco build",
+    "test": "craco test --env=jsdom",
+    "eject": "craco eject",
+    "now-build": "npm run build",
+    "now-dev": "npm run start"
+  },
+  "devDependencies": {
+    "@twilio/flex-ui": "{{flexSdkVersion}}"
+  },
+  "dependencies": {
+    "@craco/craco": "^5.0.2",
+    "axios": "*",
+    "flex-plugin": "{{flexPluginVersion}}",
+    "craco-config-flex-plugin": "{{cracoConfigVersion}}",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-scripts": "^3.0.1"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
