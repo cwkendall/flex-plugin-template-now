@@ -9,8 +9,8 @@ $ now login
 # Test fullstack Flex Plugin locally
 $ now dev
 
-# Deploy to: https://{{plugin-name}}-{{deploy-id}}.now.sh
+# Deploy to: https://[plugin-name]-[deploy-id].now.sh
 $ now
 
-# Alias deployment as https://{{plugin-name}}.{{org-name}}.now.sh
-$ now alias
+# Alias deployment as https://[plugin-name].now.sh
+$ now --target production
